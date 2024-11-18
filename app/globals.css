@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-pt-28 scroll-smooth sm:scroll-pt-32;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  .\?r {
+    @apply bg-red-500/40 !important;
+  }
+  .\?g {
+    @apply bg-green-500/40 !important;
+  }
+  .\?b {
+    @apply bg-blue-500/40 !important;
+  }
+  .\?y {
+    @apply bg-yellow-500/40 !important;
+  }
+  .\?p {
+    @apply bg-purple-500/40 !important;
+  }
+  .\?o {
+    @apply bg-orange-500/40 !important;
+  }
+}
+
+@layer base {
+  /* https://zippystarter.com/tools/shadcn-ui-theme-generator */
+  /* #364c63 */
+  /* Saturation 0, Lightness 0 */
+  :root {
+    --background: 211 0% 95%;
+    --foreground: 211 0% 0%;
+    --card: 211 0% 90%;
+    --card-foreground: 211 0% 10%;
+    --popover: 211 0% 95%;
+    --popover-foreground: 211 95% 0%;
+    --primary: 211 29.4% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 211 10% 70%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 173 10% 85%;
+    --muted-foreground: 211 0% 35%;
+    --accent: 173 10% 80%;
+    --accent-foreground: 211 0% 10%;
+    --destructive: 0 50% 30%;
+    --destructive-foreground: 211 0% 90%;
+    --border: 211 20% 50%;
+    --input: 211 20% 18%;
+    --ring: 211 29.4% 30%;
+    --radius: 0.5rem;
+  }
+  /* Saturation 0, Lightness 30 */
+  .dark {
+    --background: 211 10% 10%;
+    --foreground: 211 0% 90%;
+    --card: 211 0% 10%;
+    --card-foreground: 211 0% 90%;
+    --popover: 211 10% 5%;
+    --popover-foreground: 211 0% 90%;
+    --primary: 211 29.4% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 211 10% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 173 10% 25%;
+    --muted-foreground: 211 0% 60%;
+    --accent: 173 10% 25%;
+    --accent-foreground: 211 0% 90%;
+    --destructive: 0 50% 30%;
+    --destructive-foreground: 211 0% 90%;
+    --border: 211 20% 28%;
+    --input: 211 20% 28%;
+    --ring: 211 29.4% 30%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
