@@ -5,7 +5,7 @@ export default function GithubLink() {
     <Button
       size="icon"
       variant="ghost"
-      className="rounded-full border border-white/80"
+      className="rounded-full border border-black/80 dark:border-white/80"
       asChild
     >
       <a href="https://github.com/kellan-dev" target="_blank">
