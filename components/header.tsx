@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import avatar from "@/public/avatar.webp";
 import Container from "@/components/container";
+import GithubLink from "@/components/github-link";
 import { ThemeToggle } from "./theme-toggle";
 import { motion } from "framer-motion";
 import { defaultSpring } from "@/lib/motion";
@@ -44,9 +45,10 @@ export default function Header() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="hidden sm:block"
+          className="xs:flex hidden items-center gap-4"
         >
           <ThemeToggle />
+          <GithubLink />
         </motion.div>
       </Container>
     </header>
