@@ -1,6 +1,7 @@
 import bugbook from "@/public/projects/bugbook.webp";
 import propertypulse from "@/public/projects/property-pulse.webp";
 import wildoasis from "@/public/projects/wild-oasis.webp";
+import flowscrape from "@/public/projects/flowscrape.webp";
 import { StaticImageData } from "next/image";
 
 export type Tool = {
@@ -85,6 +86,7 @@ export const primaryTools: Tool[] = [
 export type Project = {
   name: string;
   course: string;
+  courseHref: string;
   src: StaticImageData;
   sourceHref: string;
   demoHref: string;
@@ -93,12 +95,37 @@ export type Project = {
 
 export const primaryProjects: Project[] = [
   {
+    name: "FlowScrape",
+    course: "Kliton Bare",
+    courseHref: "https://www.youtube.com/watch?v=RkwbGuL-dzo",
+    src: flowscrape,
+    sourceHref: "https://github.com/kellan-dev/flowscrape",
+    demoHref: "https://flowscrape-lime.vercel.app/",
+    tags: [
+      "Next.js",
+      "Tailwind",
+      "shadcn/ui",
+      "Prisma",
+      "Zod",
+      "React Query",
+      "Clerk",
+      "React Flow",
+      "Stripe",
+      "Recharts",
+      "Puppeteer",
+      "OpenAI",
+      "Dark Mode",
+    ],
+  },
+  {
     name: "Bugbook",
     course: "Coding In Flow",
+    courseHref: "https://www.youtube.com/watch?v=TyV12oBDsYI",
     src: bugbook,
     sourceHref: "https://github.com/kellan-dev/bugbook",
     demoHref: "https://bugbook-virid.vercel.app/",
     tags: [
+      "TypeScript",
       "Next.js",
       "Tailwind",
       "shadcn/ui",
@@ -109,16 +136,17 @@ export const primaryProjects: Project[] = [
       "Lucia Auth",
       "Dark Mode",
       "Responsive",
-      "TypeScript",
     ],
   },
   {
     name: "PropertyPulse",
     course: "NextJS From Scratch",
+    courseHref: "https://www.traversymedia.com/nextjs-from-scratch",
     src: propertypulse,
     sourceHref: "https://github.com/kellan-dev/property-pulse",
     demoHref: "https://property-pulse-brown-nine.vercel.app/",
     tags: [
+      "JavaScript",
       "Next.js",
       "Tailwind",
       "MongoDB",
@@ -126,24 +154,23 @@ export const primaryProjects: Project[] = [
       "Cloudinary",
       "AuthJS",
       "Responsive",
-      "JavaScript",
     ],
   },
   {
     name: "Wild Oasis",
     course: "Ultimate React",
+    courseHref: "https://www.udemy.com/course/the-ultimate-react-course/",
     src: wildoasis,
     sourceHref: "https://github.com/kellan-dev/wild-oasis-internal",
     demoHref: "https://wild-oasis-internal.vercel.app/",
     tags: [
+      "JavaScript",
       "React",
       "React Router",
       "Styled Components",
       "Supabase",
       "React Query",
-      "React Hook Form",
       "Recharts",
-      "JavaScript",
     ],
   },
 ];

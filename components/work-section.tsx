@@ -11,6 +11,7 @@ import {
   GitHubLogoIcon,
 } from "@radix-ui/react-icons";
 import { defaultSpring } from "@/lib/motion";
+import { cn } from "@/lib/utils";
 
 export default function WorkSection() {
   return (
@@ -89,7 +90,21 @@ function Project({
       <div className="flex flex-col justify-between px-1 pb-6 sm:p-4">
         <div>
           <h3 className="text-lg text-foreground">{project.name}</h3>
-          <p className="text-sm text-muted-foreground">{project.course}</p>
+          {/* <p className="text-sm text-muted-foreground">
+            <a
+              href={project.courseHref}
+              target="_blank"
+              className="hover:underline"
+            >
+              {project.course}
+            </a>
+          </p> */}
+          <ProjectLink
+            href={project.courseHref}
+            className="text-muted-foreground"
+          >
+            {project.course}
+          </ProjectLink>
         </div>
         <ul className="flex flex-wrap gap-2 py-6">
           {project.tags.map((tag) => (
@@ -126,9 +141,11 @@ function Project({
 
 function ProjectLink({
   children,
+  className,
   href,
 }: {
   children: ReactNode;
+  className?: string;
   href: string;
 }) {
   return (
@@ -136,7 +153,10 @@ function ProjectLink({
       <a
         href={href}
         target="_blank"
-        className="flex items-center gap-2 text-foreground hover:underline"
+        className={cn(
+          "flex items-center gap-2 text-foreground hover:underline",
+          className,
+        )}
       >
         {children}
       </a>
