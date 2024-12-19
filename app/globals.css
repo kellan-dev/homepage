@@ -39,11 +39,8 @@
 }
 
 @layer base {
-  /* https://zippystarter.com/tools/shadcn-ui-theme-generator */
-  /* #364c63 */
-  /* Saturation 0, Lightness 0 */
   :root {
-    --background: 211 0% 95%;
+    --background: 60 20% 98%;
     --foreground: 211 0% 0%;
     --card: 211 0% 90%;
     --card-foreground: 211 0% 10%;
@@ -64,9 +61,8 @@
     --ring: 211 29.4% 30%;
     --radius: 0.5rem;
   }
-  /* Saturation 0, Lightness 30 */
   .dark {
-    --background: 211 10% 10%;
+    --background: 218 13% 8%;
     --foreground: 211 0% 90%;
     --card: 211 0% 10%;
     --card-foreground: 211 0% 90%;

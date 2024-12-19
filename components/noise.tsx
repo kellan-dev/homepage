@@ -1,5 +1,8 @@
 export default function Noise() {
   return (
-    <div className="pointer-events-none fixed inset-0 z-[-1] h-full w-full bg-[url('/noise.svg')] bg-repeat dark:bg-[url('/noise.dark.svg')]"></div>
+    <div
+      style={{ backgroundImage: "url(/noise.png)" }}
+      className="pointer-events-none absolute inset-0 bg-[size:180px] bg-repeat opacity-[0.035] [z-index:-1] dark:opacity-[0.015]"
+    ></div>
   );
 }

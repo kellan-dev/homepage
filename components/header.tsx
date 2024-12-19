@@ -13,7 +13,7 @@ const navigationItems = ["Stack", "Work", "About", "Contact"];
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-10 border-b bg-background/60 bg-[url('/noise.svg')] bg-repeat px-4 py-4 backdrop-blur-lg dark:bg-[url('/noise.dark.svg')] sm:py-6">
+    <header className="sticky top-0 z-10 border-b bg-background/50 px-4 py-4 backdrop-blur-lg sm:py-6">
       <Container className="flex items-center justify-between">
         <div className="flex items-center sm:gap-4">
           <Link href="/">
@@ -45,7 +45,7 @@ export default function Header() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="xs:flex hidden items-center gap-4"
+          className="hidden items-center gap-4 xs:flex"
         >
           <ThemeToggle />
           <GithubLink />
