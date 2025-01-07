@@ -2,6 +2,7 @@ import bugbook from "@/public/projects/bugbook.webp";
 import propertypulse from "@/public/projects/property-pulse.webp";
 import wildoasis from "@/public/projects/wild-oasis.webp";
 import flowscrape from "@/public/projects/flowscrape.webp";
+import ticketbounty from "@/public/projects/ticketbounty.webp";
 import { StaticImageData } from "next/image";
 
 export type Tool = {
@@ -94,6 +95,26 @@ export type Project = {
 };
 
 export const primaryProjects: Project[] = [
+  {
+    name: "TicketBounty",
+    course: "The Road to Next",
+    courseHref: "https://www.road-to-next.com/",
+    src: ticketbounty,
+    sourceHref: "https://github.com/kellan-dev/ticketbounty",
+    demoHref: "https://ticketbounty.vercel.app/",
+    tags: [
+      "TypeScript",
+      "Next.js",
+      "Tailwind",
+      "shadcn/ui",
+      "Prisma",
+      "Zod",
+      "React Query",
+      "Lucia Auth",
+      "Nuqs",
+      "Dark Mode",
+    ],
+  },
   {
     name: "FlowScrape",
     course: "Kliton Bare",
